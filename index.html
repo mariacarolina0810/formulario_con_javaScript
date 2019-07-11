@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   
+    th{
+        border: 2px solid black;
+    }
+    td{
+        border: 2px solid black;
+        height: 10px;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <p>
+                <label><strong>Nombres: </strong> <input type="text" id="registro1" name="nombre" size="40"></label>  <br>
+                <br> <label><strong>Apellidos: </strong> <input type="text" id="registro2"  name="Apellidos" size="40"></label>
+            </p>
+            
+            <p>
+                <label><strong>Genero </strong></label>
+                <select name="Genero" id="registro3">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="estado">Estado civil</label>
+                <input type="radio" id="casado" name="estadoCivil" value="casado"> casado
+                <input type="radio" id="soltero" name="estadoCivil" value="soltero"> soltero
+            </p>
+            
+            <p>
+                <input type="button" onclick="mostrar()" value="Agregar">
+            </p>
+        </div>
+    </form>
+    
+    <table id="tabla">
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Genero</th>
+            <th>Estado civil</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
